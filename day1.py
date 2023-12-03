@@ -1,6 +1,6 @@
 import sys
 
-lines = open(sys.argv[1]).read().split('\n')
+lines = open('inputs/day1.in').read().split('\n')
 
 
 def part1():
@@ -79,8 +79,6 @@ def part2():
     for line in lines:
         first = find_first_spelled_digit(line)
         last = find_last_spelled_digit(line)
-        print(first)
-        print(last)
         calibration_values.append(str(first) + str(last))
 
     ans2 = 0
