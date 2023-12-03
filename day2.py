@@ -5,6 +5,25 @@ for line in lines:
     print(line)
 
 
+cubes = {
+    'red': 12,
+    'green': 13,
+    'blue': 14
+}
+game_sum = 0
+
+
+class GameRound:
+    red = 0
+    green = 0
+    blue = 0
+
+
+def process_game_line(game_line):
+    global game_sum
+    game_sum += 1
+
+
 def part1():
     return 1
 
